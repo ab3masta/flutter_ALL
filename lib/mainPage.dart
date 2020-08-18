@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all/Architecting_a_flutter_app/counter_screen.dart';
+import 'package:flutter_all/Services_to_do_the_work/ui/counter_screen.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -22,6 +23,15 @@ class _MainPageState extends State<MainPage> {
                     MaterialPageRoute(builder: (context) => CounterScreen()));
               },
               child: Text('architecting a flutter app'),
+            ),
+          ),
+           Center(
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => SworkCounterScreen()));
+              },
+              child: Text('Service to do work'),
             ),
           )
         ],
