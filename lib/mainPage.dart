@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_all/Architect_project_using_blogPattern/src/ui/movie_list.dart';
 import 'package:flutter_all/Architecting_a_flutter_app/counter_screen.dart';
 import 'package:flutter_all/Services_to_do_the_work/ui/counter_screen.dart';
 
@@ -25,15 +26,24 @@ class _MainPageState extends State<MainPage> {
               child: Text('architecting a flutter app'),
             ),
           ),
-           Center(
+          Center(
             child: RaisedButton(
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => SworkCounterScreen()));
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => SworkCounterScreen()));
               },
               child: Text('Service to do work'),
             ),
-          )
+          ),
+          Center(
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => MovieList()));
+              },
+              child: Text('Architect project using blog pattern'),
+            ),
+          ),
         ],
       ),
     );
