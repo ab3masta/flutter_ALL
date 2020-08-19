@@ -37,6 +37,9 @@ dependencies:
   mockito: ^4.1.1
   provider_architecture: ^1.1.1+1
   rxdart: ^0.24.1
+  image_picker: ^0.6.7+4
+  firebase_ml_vision: ^0.9.6+2
+  cloud_firestore: ^0.14.0
 
 dev_dependencies:
   flutter_test:
