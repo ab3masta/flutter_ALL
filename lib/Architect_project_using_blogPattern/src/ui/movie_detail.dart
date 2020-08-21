@@ -222,4 +222,4 @@ class MovieDetailState extends State<MovieDetail> {
       ),
     );
   }
-}
+} 
