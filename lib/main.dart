@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all/MVP_architecture_pattern/mvpExample/presenter/example_presenter.dart';
-import 'package:flutter_all/MVP_architecture_pattern/mvpExample/view/example_component.dart';
-import 'package:flutter_all/mainPage.dart';
-import 'MVP_architecture_pattern/mvpCalculator/presenter/calculatorPresenter.dart';
-import 'MVP_architecture_pattern/mvpCalculator/view/basicCalculator_component.dart';
-import 'Services_to_do_the_work/core/services/service_locator.dart';
+import 'Weather_BlocPattern_ApiCalling/weatherMain.dart';
 
 void main() {
-  setupServiceLocator();
   runApp(MyApp());
 }
 
@@ -21,7 +15,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       //home: MainPage(),
-      home: BasicCalculator(new BasicCalculatorPresenter()),
+      home: WeaterMain(),
       debugShowCheckedModeBanner: false,
     );
   }
